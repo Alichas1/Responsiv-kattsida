@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="forum.css" />
+  </head>
+  <body>
+    <div class="background">
+      <h1>Logga in/</h1>
+      <h2><a href="index.html">Tillbaka till Katthemsidan</h2></a>
+      <div class="formcontainer">
+        <form action="https://httpbin.org/anything" method="post">
+          <div class="fname">
+            <label for="fname">First name:</label><br />
+            <input id="fname" name="fname" type="text" required />
+          </div>
+          <div class="lname">
+            <label for="lname">Last name:</label><br />
+            <input id="lname" name="lname" type="text" required />
+          </div>
+
+          <div class="username">
+            <label for="username">username:</label><br />
+            <input id="username" name="username" type="text" required />
+          </div>
+
+          <div class="password">
+            <label for="pass">Password:</label><br />
+            <input id="pass" name="password" type="password" required />
+          </div>
+          <div class="email">
+            <label for="email">Enter your email:</label><br />
+            <input id="email" name="email" type="email" required />
+          </div>
+          <br />
+
+          <div class="cat">
+            <label for="catselect">favorite cat breed</label>
+            <select name="cat" id="catselect" required>
+              <option value="">Chose your favorite cat breed</option>
+              <option value="cat">Heliga birma</option>
+              <option value="cat">Russian blue</option>
+              <option value="cat">japanese bobtail</option>
+              <option value="cat">Turkisk angora</option>
+              <option value="cat">Ragdoll</option>
+            </select>
+          </div>
+          <br />
+
+          <div class="checkbox">
+            <br /><br /><label for="myCheck">Godkänd villkoren:</label><br />
+            <input type="checkbox" id="myCheck" required />
+          </div>
+
+          <div class="send"><br /><button type="submit">skicka</button></div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

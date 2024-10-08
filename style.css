@@ -1,0 +1,185 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+nav {
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+nav i {
+  color: green;
+  margin: 10px;
+}
+
+.navbar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    display: flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.button:hover {
+  opacity: 0.5;
+  background-color: #333;
+  color: white;
+  width: 150px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+}
+
+.section {
+  padding: 40px;
+  background-color: #f1f1f1;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.section h2,
+p {
+  margin-bottom: 30px;
+}
+
+.img2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  height: 500px;
+  transition: 0.3s;
+  object-fit: cover;
+  box-shadow: 2px 2px 2px #353232;
+}
+
+.img2:hover {
+  transform: scale(1.1);
+}
+
+.section1 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.section1 img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.section1 img:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 2px #000;
+}
+
+.section1 h2 {
+  font-size: 2.5rem;
+}
+
+.catGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  transition: 1s;
+}
+
+.catGrid img {
+  width: 100%;
+  height: auto;
+  transition: 0.3s;
+}
+
+.catGrid img:hover {
+  transform: scale(1.2);
+  z-index: 2;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #000;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 880px) {
+  .container {
+    width: 700px;
+  }
+
+  .img2 {
+    width: 600px;
+  }
+}
+
+@media (max-width: 680px) {
+  .container {
+    width: 100%;
+  }
+
+  .img2 {
+    width: 400px;
+  }
+
+  .section h2 {
+    text-align: center;
+  }
+
+  .section1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .section1 img {
+    height: 300px;
+    width: 400px;
+  }
+}
